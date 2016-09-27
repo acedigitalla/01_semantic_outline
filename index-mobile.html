@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<link rel="stylesheet" href="css/mobilestyles.css">
+<title>Time Out Eco Friendly</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    float: left;
+	width: 100%;
+    padding: 15px;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+body {
+	max-width: 100%;
+    height: auto;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	background-color: #fff;
+	font-family: "Century Gothic", Helvetica;
+	font: "Century Gothic";
+	font-size: 18px;
+	color: #000;
+}
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: #fff;
+}
+.header {
+	background-color: #f00;
+	height: 200px;
+}
+.container {
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	position: fixed;
+	top: 18px;
+	background-color:#f00;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    overflow: hidden;
+}
+ul.topnav li {float: left;}
+ul.topnav li a {
+    display: block;
+}
+ul.topnav li.right {float: right;}
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,0,0);
+    background-color: rgba(255,0,0, 0.7);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+	font: "Century Gothic";
+	font-size: 100px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 100px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #ffffff;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 150px;
+}
+@media screen and (max-height: 600px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 100px}
+  .overlay .closebtn {
+    font-size: 100px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media only screen and (orientation: landscape) {
+.overlay {
+    height: 0%;
+    width: 100%;
+	position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,0,0);
+    background-color: rgba(255,0,0, 0.7);
+    overflow: scroll;
+    transition: 0.5s;
+}
+}
+.titlestyle {
+	font-family: "Century Gothic", Helvetica;
+	font: "Century Gothic";
+	font-size: 170px;
+	font-weight: bold;
+	color: #f66522;
+	text-align: center;
+}
+.titlestyle2 {
+	font-family: "Century Gothic", Helvetica;
+	font: "Century Gothic";
+	font-size: 115px;
+	font-weight: bold;
+	color: #f66522;
+	text-align: center;
+}
+.titlestyle3 {
+	font-family: "Century Gothic", Helvetica;
+	font: "Century Gothic";
+	font-size: 50px;
+	font-weight: bold;
+	color: #f66522;
+	text-align: center;
+}
+.titlestyle4 {
+	font-family: "Century Gothic", Helvetica;
+	font: "Century Gothic";
+	font-size: 40px;
+	font-weight: bold;
+	color: #f66522;
+	text-align: left;
+}
+.table#t01 {
+	border: none;
+	cellspacing: 0px;
+	cellpadding: 0px;
+	width: 99%; 
+	background-color: #ffffff;
+	vertical-align: middle;
+}
+.intropara {
+	text-align: left;
+	padding: 10px;
+}
+.intropara2 {
+	text-align: center;
+	padding: 10px;
+}
+.button {
+	background-color: #f1d01a; /* Yellow */
+	border: 2px solid #e7e7e7;
+	border-radius: 50px;
+	display: inline-block;
+	margin: 15px 15px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	font: "century gothic";
+}
+.button1 {
+	width: 400px;
+	height: 150px;
+	background-color: #f1d01a;
+
+	font-size: 35px;
+}
+.button1:hover {
+	background-color: #ffff00;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button2 {
+	width: 400px;
+	height: 150px;
+	background-color: #ff0000;
+	font-size: 50px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.button2:hover {
+	color: #ffffff;
+	background-color: #ff0000;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input[type=text] {
+	width: 90%;
+	height: 150px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 10px 5px;
+	margin: 0 0;
+	font-size: 50px;
+	color: #000;
+}
+input[type=textarea] {
+	width: 90%;
+	height: 500px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 10px 5px;
+	margin: 0 0;
+	font-size: 50px;
+	color: #000;
+}
+input[type=submit] {
+	width: 50%;
+	height: 150px;
+	border: none;
+	border-radius: 25px;
+	background-color: #f00;
+	padding: 15px 30px;
+	margin: 5px 5px;
+	cursor: pointer;
+	font-size: 50px;
+	color: #fff;
+}
+.menustyle {
+	padding-top: 10px;
+	font-family: "Century Gothic", Helvetica;
+	font: "Century Gothic";
+	font-size: 30px;
+	color: #fff;
+}
+.contactus {
+	text-align: left;
+	padding: 10px;
+	font-size: 25px;
+}
+.footer {
+	background-color: #f00;
+	height: 200px;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+<ul class="topnav">
+  <li><div class="container">
+		<span onclick="openNav()"><img src="images/menu-icon.png" width="100%" alt="menu icon" /></span>
+		<script>
+			function openNav() {
+    			document.getElementById("myNav").style.height = "100%";
+			}
+
+			function closeNav() {
+				document.getElementById("myNav").style.height = "0%";
+			}
+		</script>
+	</div>
+  </li>
+  <li class="right"><img src="images/time-out-logo.png" width="75%" alt="Time Out Logo" /></li>
+</ul>
+<hr width="99%" color="#ffffff">
+</div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+	<a href="index-mobile.html" title="Time Out Eco Friendly">Home</a>
+	<a href="about-us-mobile.html" title="About Time Out">About Us</a>
+	<a href="mosquitoes-botanicals-mobile.html" title="Time Out For Mosquitoes Botanicals">Mosquitoes</a>
+	<a href="roaches-and-ants-mobile.html" title="Time Out For Roaches And Ants">Roaches And Ants</a>
+	<a href="termites-mobile.html" title="Time Out For Termites">Termites</a>
+	<a href="contact-us-mobile.html" title="Contact Time Out">Contact Us</a>
+	<a href="faqs-mobile.html" title="Time Out FAQs">FAQs</a>
+	<a href="where-to-buy-mobile.html" title="Where To Buy Time Out">Where To Buy</a>
+  </div>
+</div>
+&nbsp;
+	<div class="titlestyle">TIME OUT</div>
+    <div class="titlestyle2">ECO FRIENDLY</div>
+&nbsp;
+&nbsp;
+&nbsp;
+      <div align="center" valign="bottom">Click on Products for more Information</div><br />
+    <table id="t01">
+  <tr>
+  <td width="30%" align="right" valign="top"><a href="roaches-and-ants-mobile.html" title="Time Out for Roaches and Ants"><img src="images/roaches-and-ants-spray-web.png" width="62%" alt="Time Out for Roaches and Ants" /></a></td>
+  <td width="40%" align="center" valign="top"><a href="mosquitoes-botanicals-mobile.html" title="Time Out for Mosquitoes Botanicals"><img src="images/mosquito-spray-web.png" width="62%" alt="Time Out for Mosquitoes Botanicals" /></a></td>
+  <td width="30%" align="left" valign="top"><a href="termites-mobile.html" title="Time Out for Termites"><img src="images/termites-spray-web.png" width="62%" alt="Time Out for Termites" /></a>
+  </td>  
+  </tr>
+</table>
+&nbsp;
+<div class="intropara" style="font-size:40px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+&nbsp;
+&nbsp;
+&nbsp;
+  	<div class="titlestyle3">SUBSCRIBE TO OUR NEWSLETTER</div>
+  	<div class="intropara2" align="center">
+    Join our mailing list to receive information about new products & promotions.<br />
+	Sign up with your email address below.<br />
+    We respect your privacy.<br /><br />
+	<form action="mailto:info@acedigitalagency.net" method="post" enctype="multipart/form-data">
+	<input name="name" type="text" placeholder="Fullname" size="48" maxlength="48" /><br /><br />
+	<input name="email" type="text" placeholder="Email Address" size="48" maxlength="48" /><br /><br />
+	<input name="Submit" type="submit" value="Submit" />
+	</form>
+	</div>
+&nbsp;
+&nbsp;
+&nbsp;
+<div class="footer" align="center">
+    <div class="menustyle"><a href="assets/privacy-policy.pdf" title="Time Out Privacy Policy">Privacy Policy</a> | <a href="assets/terms-of-use.pdf" title="Time Out Terms of Use">Terms of Use</a></div>
+    <hr width="99%" color="#ffffff" />
+	<p style="color: #ffffff; font-size:30px;">COPYRIGHTS &copy; 2016 TIME OUT. ALL RIGHTS RESERVED.</p>
+</div>
+</body>
+</html>
